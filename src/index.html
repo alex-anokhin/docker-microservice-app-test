@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrase App</title>
+</head>
+<body>
+    <h1 id="phrase">Loading...</h1>
+    <button onclick="refreshPhrase()">Refresh</button>
+    <script>
+        function refreshPhrase() {
+            fetch('/api/phrase')
+            .then(response => response.text())
+            .then(phrase => {
+                document.getElementById('phrase').innerText = phrase;
+            });
+        }
+        refreshPhrase();
+    </script>
+</body>
+</html>

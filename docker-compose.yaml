@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  phrase-server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile_server
+    ports:
+      - "5051:5051"
+    container_name: phrase-server
+
+  phrase-nginx:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile_nginx
+    ports:
+      - "8083:80"
+    depends_on:
+      - phrase-server
