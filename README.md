@@ -1,4 +1,4 @@
-docker# docker-microservice-app-test
+# docker-microservice-app-test
 Project (webapp) for testing microservice arcitecture implemented with docker containers
 
 ## project structure
@@ -46,6 +46,7 @@ To stop the service, run the following command:
     ```
     docker-compose down
     ```
+
 This command will stop and remove all containers created for the project.
 
 ## Additional Commands
