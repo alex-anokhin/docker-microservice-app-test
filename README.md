@@ -11,6 +11,6 @@ Project (webapp) for testing microservice arcitecture implemented with docker co
     - app/
         - server.py
         - requirements.txt
-    - html/
+    - src/
         - index.html
 
