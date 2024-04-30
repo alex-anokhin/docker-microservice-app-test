@@ -36,7 +36,7 @@ Project (webapp) for testing microservice arcitecture implemented with docker co
     ```
 
 This command will create and start containers for the server and Nginx.
-5. Once the service is running, open your web browser and go to `http://localhost:8080` to access the application.
+5. Once the service is running, open your web browser and go to `http://localhost:8083` to access the application.
 
 
 ## How to Stop the Service
